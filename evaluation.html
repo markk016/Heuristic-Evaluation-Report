@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Results - Heuristic Evaluation Report</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Heuristic Evaluation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="decide.html">DECIDE Framework</a></li>
+                    <li><a href="evaluation.html" class="active">Evaluation Results</a></li>
+                    <li><a href="improvements.html">Proposed Improvements</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Evaluation Results</h1>
+                <p>Detailed findings from our heuristic evaluation</p>
+            </div>
+        </section>
+
+        <section class="evaluation-workbook">
+            <div class="container">
+                <h2>Heuristic Evaluation Workbook</h2>
+                <p>This section presents a summary of the usability evaluation conducted on the Library Management System. The primary objective of this evaluation was to assess the system’s interface with regard to usability, focusing on factors such as effectiveness, efficiency, and user satisfaction. Several usability issues were identified, affecting different areas of the system's design and user interaction flow.</p>
+                <p>The evaluation process followed Jacob's 10 Heuristic Evaluation method, a widely recognized framework that employs ten usability principles to systematically identify and assess interface design issues. These principles enabled a structured analysis of the system, revealing both minor inconsistencies and more significant usability barriers that could impede user performance and overall experience. </p>                 
+                <p>The evaluation has revealed critical insights into areas of the Library Management System that require improvement. The findings provide a valuable foundation for guiding future design revisions, with the goal of enhancing usability and ensuring a more seamless and user-centered experience.</p>
+                <p>Download our complete heuristic evaluation workbook for detailed documentation of all issues found:</p>
+                <a href="https://drive.google.com/drive/folders/14MmiX9NWM396gVQhN7ME79_-CPFECA19?usp=sharing" class="btn download-btn">Download Workbook (PDF)</a>
+            </div>
+        </section>
+
+        <section class="usability-issues">
+            <div class="container">
+                <h2>Usability Issues</h2>
+                <p>The following issues were identified during our heuristic evaluation:</p>
+                
+                <div class="issues-filter">
+                    <label for="heuristic-filter">Filter by Heuristic:</label>
+                    <select id="heuristic-filter" onchange="filterIssues()">
+                        <option value="all">All Heuristics</option>
+                        <option value="visibility">Visibility of System Status</option>
+                        <option value="match">Match Between System and Real World</option>
+                        <option value="control">User Control and Freedom</option>
+                        <option value="consistency">Consistency and Standards</option>
+                        <option value="prevention">Error Prevention</option>
+                        <option value="recognition">Recognition Rather Than Recall</option>
+                        <option value="flexibility">Flexibility and Efficiency of Use</option>
+                        <option value="aesthetic">Aesthetic and Minimalist Design</option>
+                        <option value="errors">Help Users Recognize, Diagnose, and Recover from Errors</option>
+                        <option value="help">Help and Documentation</option>
+                    </select>
+                </div>
+                
+                <div class="issues-list">
+                    <!-- Issue 1 -->
+                    <div class="issue-card" data-heuristic="visibility">
+                        <div class="issue-header">
+                            <span class="issue-number">Issue #1</span>
+                            <span class="heuristic-tag">Visibility of System Status</span>
+                        </div>
+                        <div class="issue-content">
+                            <div class="issue-image">
+                                <img src="images/issues/Issue1.2.png" alt="Screenshot of Issue #1" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                            </div>
+                            <div class="issue-details">
+                                <h3>Lack of Immediate Feedback and Navigation Cues</h3>
+                                <p>The system fails to provide timely and clear feedback for user actions such as logging in or deleting records. It does not highlight the current location within the interface, and lacks confirmation messages, which can leave users uncertain about what has occurred or what steps to take next.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Issue 2 -->
+                    <div class="issue-card" data-heuristic="match">
+                        <div class="issue-header">
+                            <span class="issue-number">Issue #2</span>
+                            <span class="heuristic-tag">Match Between System and Real World</span>
+                        </div>
+                        <div class="issue-content">
+                            <div class="issue-image">
+                                <img src="images/issues/Issue2.2.png" alt="Screenshot of Issue #2" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                            </div>
+                            <div class="issue-details">
+                                <h3>Navigation and Date Selection Usability Issues</h3>
+                                <p>The date picker combines years and months in a single list, which disrupts the expected order and makes it harder for users to select dates. Presenting years separately and in sequence would make the selection process more intuitive. Additionally, the burger icon is not functioning, preventing users from accessing the main navigation menu. This limits usability and should be fixed to ensure smooth and efficient navigation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Issue 3 -->
+                    <div class="issue-card" data-heuristic="control">
+                        <div class="issue-header">
+                            <span class="issue-number">Issue #3</span>
+                            <span class="heuristic-tag">User Control and Freedom</span>
+                        </div>
+                        <div class="issue-content">
+                            <div class="issue-image">
+                                <img src="images/issues/Issue3.3.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                            </div>
+                            <div class="issue-details">
+                                <h3>No Undo, Cancel, or Error Recovery Options</h3>
+                                <p>Users have no way to reverse or cancel actions. Mistakes like accidental deletion or form errors force them to restart entire processes, creating frustration and a sense of being trapped within the system’s rigid workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <!-- Issue 4 -->
+                                        <div class="issue-card" data-heuristic="consistency">
+                                            <div class="issue-header">
+                                                <span class="issue-number">Issue #4</span>
+                                                <span class="heuristic-tag">Consistency and Standards</span>
+                                            </div>
+                                            <div class="issue-content">
+                                                <div class="issue-image">
+                                                    <img src="images/issues/Issue4.3.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                                                </div>
+                                                <div class="issue-details">
+                                                    <h3>Confusing Interface and Data Inconsistencies</h3>
+                                                    <p>There are frequent mismatches between displayed data and actual records (e.g., showing 8 borrowed books but only listing 4), along with inconsistent use of symbols and terminology. These inconsistencies undermine trust and usability.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                                            <!-- Issue 5 -->
+                    <div class="issue-card" data-heuristic="prevention">
+                        <div class="issue-header">
+                            <span class="issue-number">Issue #5</span>
+                            <span class="heuristic-tag">Error Prevention</span>
+                        </div>
+                        <div class="issue-content">
+                            <div class="issue-image">
+                                <img src="images/issues/Issue5.1.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                            </div>
+                            <div class="issue-details">
+                                <h3>Inadequate Safeguards Against User Errors</h3>
+                                <p>Many actions proceed without confirmation, and the system provides vague or missing guidance when users make input mistakes. Error prevention is weak, which increases the likelihood of user errors going unnoticed or unresolved.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <!-- Issue 6 -->
+                                        <div class="issue-card" data-heuristic="recognition">
+                                            <div class="issue-header">
+                                                <span class="issue-number">Issue #6</span>
+                                                <span class="heuristic-tag">Recognition Rather Than Recall</span>
+                                            </div>
+                                            <div class="issue-content">
+                                                <div class="issue-image">
+                                                    <img src="images/issues/Issue6.1.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                                                </div>
+                                                <div class="issue-details">
+                                                    <h3>Icons and Navigation Rely Too Much on Memory</h3>
+                                                    <p>The system’s icons are visually indistinct and often misleading, requiring users to remember their functions. Navigation is not intuitive, and context is often missing from forms or pages, increasing user effort and confusion.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                                            <!-- Issue 7 -->
+                    <div class="issue-card" data-heuristic="flexibility">
+                        <div class="issue-header">
+                            <span class="issue-number">Issue #7</span>
+                            <span class="heuristic-tag">Flexibility and Efficiency of Use</span>
+                        </div>
+                        <div class="issue-content">
+                            <div class="issue-image">
+                                <img src="images/issues/Issue7.1.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                            </div>
+                            <div class="issue-details">
+                                <h3>No Support for Efficient or Advanced Use</h3>
+                                <p>There are no batch actions, shortcuts, or user preferences. Users must perform repetitive tasks manually, with no way to speed up their workflow, especially frustrating for administrators managing large sets of data.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <!-- Issue 8 -->
+                                        <div class="issue-card" data-heuristic="aesthetic">
+                                            <div class="issue-header">
+                                                <span class="issue-number">Issue #8</span>
+                                                <span class="heuristic-tag">Aesthetic and Minimalist Design</span>
+                                            </div>
+                                            <div class="issue-content">
+                                                <div class="issue-image">
+                                                    <img src="images/issues/Issue8.1.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                                                </div>
+                                                <div class="issue-details">
+                                                    <h3>Gear Icon Spins Unnecessarily</h3>
+                                                    <p>The gear icon kept spinning on the settings page when it shouldn’t have. This continuous animation created unnecessary visual clutter. It distracted users and made the interface feel less polished.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                                            <!-- Issue 9 -->
+                    <div class="issue-card" data-heuristic="errors">
+                        <div class="issue-header">
+                            <span class="issue-number">Issue #9</span>
+                            <span class="heuristic-tag">Help Users Recognize, Diagnose, and Recover from Errors</span>
+                        </div>
+                        <div class="issue-content">
+                            <div class="issue-image">
+                                <img src="images/issues/Issue9.1.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                            </div>
+                            <div class="issue-details">
+                                <h3>Technical Error Messages Without Guidance</h3>
+                                <p>When errors occur, the system displays confusing technical terms (like “Undefined array key”) that don’t explain what went wrong or how to fix it. Users are given no clear path to recovery, causing frustration and delays.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <!-- Issue 10 -->
+                                        <div class="issue-card" data-heuristic="help">
+                                            <div class="issue-header">
+                                                <span class="issue-number">Issue #10</span>
+                                                <span class="heuristic-tag">Help and Documentation</span>
+                                            </div>
+                                            <div class="issue-content">
+                                                <div class="issue-image">
+                                                    <img src="images/issues/Issue10.1.png" alt="Screenshot of Issue #3" onerror="this.src='https://via.placeholder.com/400x300?text=Issue+Screenshot'">
+                                                </div>
+                                                <div class="issue-details">
+                                                    <h3>No Help Resources or In-System Guidance</h3>
+                                                    <p>The system provides no help section, tooltips, instructions, or user documentation. Users are left to figure things out entirely on their own, which can be especially problematic when encountering errors or unfamiliar features.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="evaluation-conclusion">
+            <div class="container">
+                <h2>Conclusion</h2>
+                <div class="conclusion-content">
+                    <p>The system has many problems that make it hard to use, especially for new users. It doesn’t give clear feedback, uses confusing words and icons, and lacks important features like undo, help guides, and shortcuts. Errors are often unclear and the design feels messy and overwhelming. </p>
+                    <p>These issues can cause users to make mistakes, feel lost, and waste time doing simple tasks. To improve, the system needs to be more user-friendly, clear, and supportive at every step.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Heuristic Evaluation</h3>
+                    <p>HCI2 Final Project</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="decide.html">DECIDE Framework</a></li>
+                        <li><a href="evaluation.html">Evaluation Results</a></li>
+                        <li><a href="improvements.html">Proposed Improvements</a></li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Project Information</h4>
+                    <p>Partido State University</p>
+                    <p>College of Engineering and Computational Sciences</p>
+                    <p>Bachelor of Science in Information Technology</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Heuristic Evaluation Team. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/evaluation.js"></script>
+</body>
+</html>

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposed Improvements - Heuristic Evaluation Report</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Heuristic Evaluation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="decide.html">DECIDE Framework</a></li>
+                    <li><a href="evaluation.html">Evaluation Results</a></li>
+                    <li><a href="improvements.html" class="active">Proposed Improvements</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Proposed Improvements</h1>
+                <p>Suggested enhancements based on our heuristic evaluation</p>
+            </div>
+        </section>
+
+        <section class="improvements-overview">
+            <div class="container">
+                <h2>Overview</h2>
+                <p>Based on our heuristic evaluation using Jakob Nielsen's 10 Usability Heuristics, we have developed a comprehensive set of proposed improvements to address the identified usability issues. These suggestions are grounded in HCI principles and aim to enhance the overall user experience of the system.</p>
+            </div>
+        </section>
+
+        <section class="improvements-list">
+            <div class="container">
+                <!-- Heuristic 1: Visibility of System Status -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #1</h2>
+                        <span class="heuristic-tag">Visibility of System Status</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system fails to provide timely and clear feedback for user actions. Users are often left uncertain about whether their actions have been completed successfully or what their current location is within the system.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 1A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 1.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue1.1.png" alt="Current design showing lack of action confirmation" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>When deleting member accounts it has no confirmation feedback. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement1.1.png" alt="Proposed design with toast notifications" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The system should show a message like "Member account deleted successfully!" so users know the action worked without any confusion.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 1B -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 1.2</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue1.2.png" alt="Current design showing no loading indicators" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The system does not clearly indicates where the user is currently on and what the user is dealing with, there’s no pointers or feedback or anything that could indicate what the user should do on a particular page, but basically all of it, and this is crucial especially for a library system.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement1.2.png" alt="Proposed design with loading indicators" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Add confirmation messages for every changes wether it be for changing names, adding new admins or books.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <!-- Heuristic 2: Match Between System and Real World -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #2</h2>
+                        <span class="heuristic-tag">Match Between System and Real World</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system uses terminology and concepts that don't match real-world library conventions, creating confusion for users familiar with standard library operations.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 2A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 2.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue2.1.png" alt="Current design showing inconsistent terminology" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The menu button or burger menu button doesn't not work at all.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement2.1.png" alt="Proposed design with standard library terminology" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Make the burger menu work because it loses the function all together.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 2B -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 2.2</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue2.2.png" alt="Current design showing confusing icons" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The date picker mixes years and months in one list, creating confusion and breaking the expected chronological order. Years should be presented separately and sequentially to match familiar date selection patterns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement2.2.png" alt="Proposed design with intuitive icons" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Separate year and month selection by listing years clearly and chronologically first, then displaying months for the chosen year. This improves clarity and aligns with standard date picker behavior.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                <!-- Heuristic 3: User Control and Freedom -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #3</h2>
+                        <span class="heuristic-tag">User Control and Freedom</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system lacks essential mechanisms for users to undo actions, cancel operations in progress, or easily navigate back from unwanted states, forcing users to complete unwanted actions or start over entirely.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 3A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 3.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue3.1.png" alt="Current design with no undo functionality" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>There is no undo or redo, no even the exit links, and there is a cancel action or confirmation first if the user really wants to cancel something, but what if the user accidentally just clicked it mid-fill-out of something and it all just disappear and the user would have to re-write it again from the beginning, no back ups or automatic save at all which could be very frustrating. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement3.1.png" alt="Proposed design with undo functionality" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Add auto save so the user won't have to fill out again if they make a mistake.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 3B -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 3.2</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue3.2.png" alt="Current design with no cancel options" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>There are no visible "undo" or "back" options within the interface, which could make users feel trapped if they make a mistake.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement3.2.png" alt="Proposed design with cancel buttons" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Implement clear cancel buttons, confirmation dialogs for important actions, and breadcrumb navigation to allow users to easily backtrack or undo actions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 3C -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 3.3</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue3.3.png" alt="Current design with no emergency exits" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>After submitting the form with a duplicated ID, the system shows an error message but then redirects back to the member list instead of staying on the form. These forces restarting the process to fix the error.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement3.3.png" alt="Proposed design with emergency exits" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The system should display the error message and keep the form open, allowing correction without losing entered information or needing to start over.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Heuristic 4: Consistency and Standards -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #4</h2>
+                        <span class="heuristic-tag">Consistency and Standards</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system lacks consistency in its interface elements, layout, and interaction patterns, and fails to follow established conventions, forcing users to learn different approaches for similar actions across the application.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 4A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 4.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue4.1.png" alt="Current design with inconsistent buttons" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The login button shows a checkmark symbol instead of a word, which doesn't follow common UI standards.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement4.1.png" alt="Proposed design with consistent buttons" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Use standard buttons like “Login” instead of just icons. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 4B -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 4.2</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue4.2.png" alt="Current design with inconsistent forms" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The dashboard displays "Book Borrowed" and the misspelled "Book Retured," which are inconsistent with the sidebar labels "Borrowed Books" and "Returned Books." This inconsistency can cause confusion and reduce interface credibility.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement4.2.png" alt="Proposed design with standardized forms" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Use consistent terminology across the interface by updating all labels to "Borrowed Books" and "Returned Books," and correct the spelling mistake.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 4C -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 4.3</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue4.3.png" alt="Current design ignoring platform conventions" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The homepage indicated that there were 8 borrowed books, but upon checking the list, only 4 were actually displayed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement4.3.png" alt="Proposed design following platform conventions" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Ensure that the number of borrowed books displayed on the homepage accurately reflects the actual list of books shown. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Heuristic 5: Error Prevention -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #5</h2>
+                        <span class="heuristic-tag">Error Prevention</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system lacks proactive measures to prevent errors, allowing users to make mistakes that could be avoided through better design, and failing to confirm potentially destructive actions before they are executed.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 5A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 5.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue5.1.png" alt="Current design with no confirmation dialogs" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Entering an incorrect username or password displays the vague message "Access Denied", without indicating the specific problem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/improvement5.1.jpg" alt="Proposed design with confirmation dialogs" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Show specific messages like "Incorrect password or password" or "Username not found" along with guidance to resolve the issue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 5B -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 5.2</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue5.2.png" alt="Current design with unconstrained inputs" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The system inconsistently requests confirmation from users before performing actions. While some actions prompt for confirmation, many others do not and proceed automatically.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement5.2.png" alt="Proposed design with input constraints" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Implement consistent confirmation prompts for all critical actions to prevent unintended changes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+                    
+                </div>
+                
+                <!-- Heuristic 6: Recognition Rather Than Recall -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #6</h2>
+                        <span class="heuristic-tag">Recognition Rather Than Recall</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system forces users to remember information across different parts of the interface instead of making options visible and providing contextual information, increasing cognitive load and error rates.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 6A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 6.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue6.1.png" alt="Current design lacking contextual information" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The icons for books, borrowed books, and returned books all look the same, making it difficult to distinguish between them at a glance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement6.1.png" alt="Proposed design with contextual information" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Use distinct and meaningful icons—such as a plain book for total books, a book with an arrow out for borrowed books, and a book with an arrow in for returned books.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <!-- Heuristic 7: Flexibility and Efficiency of Use -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #7</h2>
+                        <span class="heuristic-tag">Flexibility and Efficiency of Use</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system offers a one-size-fits-all interface that doesn't accommodate different user expertise levels or provide shortcuts for frequent tasks, forcing experienced users to follow the same lengthy processes as beginners.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 7A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 7.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue7.1.png" alt="Current design with no keyboard shortcuts" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>There are no shortcuts or efficient paths to make the system work smoothly and hassle-free for both inexperienced and experienced users.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement7.1.png" alt="Proposed design with keyboard shortcuts" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Allowing drag-and-drop file uploads will streamline the process by reducing the number of steps needed to add files. This enhancement improves efficiency for experienced users while maintaining ease of use for beginners.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 7B -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 7.2</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue7.2.png" alt="Current design with single-item operations" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>There are no visible shortcuts or accelerators for experienced users to speed up their workflow.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement7.2.png" alt="Proposed design with batch operations" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Implement keyboard shortcuts, batch operations (e.g., check out multiple books at once), and customizable dashboard widgets to allow power users to work more efficiently.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                </div>
+                
+                <!-- Heuristic 8: Aesthetic and Minimalist Design -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #8</h2>
+                        <span class="heuristic-tag">Aesthetic and Minimalist Design</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The interface is cluttered with unnecessary information, decorative elements, and redundant features that distract users from their primary tasks and make important information harder to find.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 8A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 8.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue8.1.png" alt="Current design with cluttered information" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The gear icon kept spinning on the settings page, even though it shouldn't have. This created unnecessary visual clutter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement8.1.png" alt="Proposed design with clear hierarchy" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The gear icon should either stay static or be removed to keep the design clean and avoid distracting the user.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
+                    
+                </div>
+                
+                <!-- Heuristic 9: Help Users Recognize, Diagnose, and Recover from Errors -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #9</h2>
+                        <span class="heuristic-tag">Help Users Recognize, Diagnose, and Recover from Errors</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system displays cryptic, technical error messages that don't help users understand what went wrong or how to fix the problem, leaving them confused and unable to recover from errors effectively.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 9A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 9.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue9.1.png" alt="Current design with technical error messages" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>When deleting an  admin account, there's an error saying "Undefined array key 'adminid”. It doesn’t  provide any useful feedback to the user about what went wrong or how to resolve it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement9.1.png" alt="Proposed design with user-friendly error messages" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Instead of a PHP error, the system should show "Unable to delete admin account. Please try again." to give users clear feedback and help them take action.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                   
+                    
+                </div>
+                
+                <!-- Heuristic 10: Help and Documentation -->
+                <div class="main-improvement">
+                    <div class="main-improvement-header">
+                        <h2>Improvement for Issue #10</h2>
+                        <span class="heuristic-tag">Help and Documentation</span>
+                    </div>
+                    
+                    <div class="main-improvement-description">
+                        <p>The system lacks adequate help resources and documentation, providing no built-in guidance for users who need assistance understanding features or completing tasks.</p>
+                    </div>
+                    
+                    <!-- Sub-improvement 10A -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 10.1</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue10.1.png" alt="Current design with no contextual help" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>There are no visible help resources, documentation links, or contextual guidance within the interface.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement10.1.png" alt="Proposed design with contextual help" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Add a help section from every page, include contextual help icons next to complex features, and provide tooltips for form fields to guide users through processes like adding new books or managing loans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-improvement 10B -->
+                    <div class="sub-improvement">
+                        <div class="sub-improvement-header">
+                            <h3>Improvement 10.2</h3>
+                        </div>
+                        <div class="improvement-content">
+                            <div class="current-design">
+                                <h4>Current Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/issues/Issue10.2.png" alt="Current design with PDF manual only" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>The system doesn’t have a Help Section or Documentation, so when I encountered an error, I had no way to find guidance or troubleshoot the issue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposed-design">
+                                <h4>Proposed Design</h4>
+                                <div class="design-container">
+                                    <div class="design-image">
+                                        <img src="images/improvements/Improvement 10.2.png" alt="Proposed design with searchable knowledge base" class="preview-image">
+                                    </div>
+                                    <div class="design-description">
+                                        <p>Create an integrated, searchable knowledge base accessible directly from the system. Organize content by common tasks and user roles rather than system features. Include step-by-step guides, FAQs, troubleshooting tips, and best practices. Implement powerful search functionality with filters and suggested results. Ensure content is written in plain language with screenshots and examples. Allow users to access the knowledge base without leaving their current screen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                          
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Heuristic Evaluation</h3>
+                    <p>HCI2 Final Project</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="decide.html">DECIDE Framework</a></li>
+                        <li><a href="evaluation.html">Evaluation Results</a></li>
+                        <li><a href="improvements.html">Proposed Improvements</a></li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Project Information</h4>
+                    <p>Partido State University</p>
+                    <p>College of Engineering and Computational Sciences</p>
+                    <p>Bachelor of Science in Information Technology</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Heuristic Evaluation Team. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="image-lightbox" class="image-lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="/placeholder.svg" alt="Enlarged image">
+            <button id="close-lightbox" class="close-lightbox">&times;</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/improvements.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECIDE Framework - Heuristic Evaluation Report</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Heuristic Evaluation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="decide.html" class="active">DECIDE Framework</a></li>
+                    <li><a href="evaluation.html">Evaluation Results</a></li>
+                    <li><a href="improvements.html">Proposed Improvements</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>DECIDE Framework</h1>
+                <p>A structured approach to guide our evaluation process</p>
+            </div>
+        </section>
+
+        <section class="decide-framework">
+            <div class="container">
+                <div class="framework-intro">
+                    <p>The DECIDE framework provides a structured approach to planning, conducting, and analyzing usability evaluations. Our team followed this framework to ensure a comprehensive and methodical evaluation of the system.</p>
+                </div>
+
+                <div class="framework-steps">
+                    <!-- Step 1: Determine -->
+                    <div class="step note-card" id="determine">
+                        <div class="step-header">
+                            <div class="step-letter">D</div>
+                            <h2>Determine the goals</h2>
+                            <div class="note-actions">
+                                <button class="edit-btn" onclick="toggleEditMode('determine-content')">Edit</button>
+                                <button class="save-btn" onclick="saveNote('determine-content')" style="display: none;">Save</button>
+                            </div>
+                        </div>
+                        <div class="step-content" id="determine-content">
+                            <div class="note-view">
+                                <p>In this initial step, we established clear objectives for our evaluation:</p>
+                                <ul>
+                                    <li>Identify usability issues that affect user experience</li>
+                                    <li>Evaluate the system's compliance with Nielsen's 10 Usability Heuristics</li>
+                                    <li>Determine the severity of identified issues</li>
+                                    <li>Establish a foundation for proposing improvements</li>
+                                </ul>
+                                <p>These goals guided our evaluation process and helped us maintain focus on the most critical aspects of the system's usability.</p>
+                            </div>
+                            <div class="note-edit" style="display: none;">
+                                <textarea class="note-textarea" id="determine-textarea">In this initial step, we established clear objectives for our evaluation:
+
+• Identify usability issues that affect user experience
+• Evaluate the system's compliance with Nielsen's 10 Usability Heuristics
+• Determine the severity of identified issues
+• Establish a foundation for proposing improvements
+
+These goals guided our evaluation process and helped us maintain focus on the most critical aspects of the system's usability.</textarea>
+                                <div class="editor-help">
+                                    <strong>Formatting tips:</strong> Use the toolbar buttons or type <code>**bold**</code>, <code>_italic_</code>, <code>==highlight==</code>, or start lines with <code>•</code> for bullet points.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Explore -->
+                    <div class="step note-card" id="explore">
+                        <div class="step-header">
+                            <div class="step-letter">E</div>
+                            <h2>Explore the questions</h2>
+                            <div class="note-actions">
+                                <button class="edit-btn" onclick="toggleEditMode('explore-content')">Edit</button>
+                                <button class="save-btn" onclick="saveNote('explore-content')" style="display: none;">Save</button>
+                            </div>
+                        </div>
+                        <div class="step-content" id="explore-content">
+                            <div class="note-view">
+                                <p>We formulated specific questions to address during our evaluation:</p>
+                                <ul>
+                                    <li>Does the system provide clear feedback to user actions?</li>
+                                    <li>How well does the system match real-world conventions?</li>
+                                    <li>Does the system offer user control and freedom?</li>
+                                    <li>Is the system consistent in its design and functionality?</li>
+                                    <li>How effectively does the system prevent errors?</li>
+                                    <li>Does the system minimize user memory load?</li>
+                                    <li>How flexible and efficient is the system for different user types?</li>
+                                    <li>Is the interface aesthetic and minimalist?</li>
+                                    <li>How well does the system help users recognize and recover from errors?</li>
+                                    <li>Is help documentation available and effective?</li>
+                                </ul>
+                            </div>
+                            <div class="note-edit" style="display: none;">
+                                <textarea class="note-textarea" id="explore-textarea">We formulated specific questions to address during our evaluation:
+
+• Does the system provide clear feedback to user actions?
+• How well does the system match real-world conventions?
+• Does the system offer user control and freedom?
+• Is the system consistent in its design and functionality?
+• How effectively does the system prevent errors?
+• Does the system minimize user memory load?
+• How flexible and efficient is the system for different user types?
+• Is the interface aesthetic and minimalist?
+• How well does the system help users recognize and recover from errors?
+• Is help documentation available and effective?</textarea>
+                                <div class="editor-help">
+                                    <strong>Formatting tips:</strong> Use the toolbar buttons or type <code>**bold**</code>, <code>_italic_</code>, <code>==highlight==</code>, or start lines with <code>•</code> for bullet points.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Choose -->
+                    <div class="step note-card" id="choose">
+                        <div class="step-header">
+                            <div class="step-letter">C</div>
+                            <h2>Choose the evaluation approach and methods</h2>
+                            <div class="note-actions">
+                                <button class="edit-btn" onclick="toggleEditMode('choose-content')">Edit</button>
+                                <button class="save-btn" onclick="saveNote('choose-content')" style="display: none;">Save</button>
+                            </div>
+                        </div>
+                        <div class="step-content" id="choose-content">
+                            <div class="note-view">
+                                <p>For our evaluation, we selected the following approaches:</p>
+                                <ul>
+                                    <li><strong>Heuristic Evaluation:</strong> Using Nielsen's 10 Usability Heuristics as our primary framework</li>
+                                    <li><strong>Task-Based Analysis:</strong> Evaluating the system through a set of predefined user tasks</li>
+                                    <li><strong>Severity Rating:</strong> Assessing the impact of each identified issue on a scale of 1-4</li>
+                                </ul>
+                                <p>These methods were chosen for their effectiveness in identifying usability issues without requiring end-user participation, making them suitable for our project constraints.</p>
+                            </div>
+                            <div class="note-edit" style="display: none;">
+                                <textarea class="note-textarea" id="choose-textarea">For our evaluation, we selected the following approaches:
+
+• Heuristic Evaluation: Using Nielsen's 10 Usability Heuristics as our primary framework
+• Task-Based Analysis: Evaluating the system through a set of predefined user tasks
+• Severity Rating: Assessing the impact of each identified issue on a scale of 1-4
+
+These methods were chosen for their effectiveness in identifying usability issues without requiring end-user participation, making them suitable for our project constraints.</textarea>
+                                <div class="editor-help">
+                                    <strong>Formatting tips:</strong> Use the toolbar buttons or type <code>**bold**</code>, <code>_italic_</code>, <code>==highlight==</code>, or start lines with <code>•</code> for bullet points.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Identify -->
+                    <div class="step note-card" id="identify">
+                        <div class="step-header">
+                            <div class="step-letter">I</div>
+                            <h2>Identify the practical issues</h2>
+                            <div class="note-actions">
+                                <button class="edit-btn" onclick="toggleEditMode('identify-content')">Edit</button>
+                                <button class="save-btn" onclick="saveNote('identify-content')" style="display: none;">Save</button>
+                            </div>
+                        </div>
+                        <div class="step-content" id="identify-content">
+                            <div class="note-view">
+                                <p>We addressed several practical considerations for our evaluation:</p>
+                                <ul>
+                                    <li><strong>Evaluator Selection:</strong> Team members with varying levels of expertise in HCI principles</li>
+                                    <li><strong>Time Constraints:</strong> Allocated specific timeframes for each evaluation session</li>
+                                    <li><strong>Equipment:</strong> Used consistent testing environments across evaluators</li>
+                                    <li><strong>Documentation:</strong> Standardized templates for recording observations</li>
+                                    <li><strong>Task Selection:</strong> Developed realistic tasks that cover key system functionalities</li>
+                                </ul>
+                            </div>
+                            <div class="note-edit" style="display: none;">
+                                <textarea class="note-textarea" id="identify-textarea">We addressed several practical considerations for our evaluation:
+
+• Evaluator Selection: Team members with varying levels of expertise in HCI principles
+• Time Constraints: Allocated specific timeframes for each evaluation session
+• Equipment: Used consistent testing environments across evaluators
+• Documentation: Standardized templates for recording observations
+• Task Selection: Developed realistic tasks that cover key system functionalities</textarea>
+                                <div class="editor-help">
+                                    <strong>Formatting tips:</strong> Use the toolbar buttons or type <code>**bold**</code>, <code>_italic_</code>, <code>==highlight==</code>, or start lines with <code>•</code> for bullet points.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Decide -->
+                    <div class="step note-card" id="decide-ethical">
+                        <div class="step-header">
+                            <div class="step-letter">D</div>
+                            <h2>Decide how to deal with ethical issues</h2>
+                            <div class="note-actions">
+                                <button class="edit-btn" onclick="toggleEditMode('decide-ethical-content')">Edit</button>
+                                <button class="save-btn" onclick="saveNote('decide-ethical-content')" style="display: none;">Save</button>
+                            </div>
+                        </div>
+                        <div class="step-content" id="decide-ethical-content">
+                            <div class="note-view">
+                                <p>We considered the following ethical aspects in our evaluation:</p>
+                                <ul>
+                                    <li><strong>Privacy:</strong> Ensuring that any user data encountered during evaluation remains confidential</li>
+                                    <li><strong>Objectivity:</strong> Maintaining impartial assessment regardless of personal preferences</li>
+                                    <li><strong>Constructive Criticism:</strong> Focusing on providing helpful feedback rather than merely criticizing</li>
+                                    <li><strong>Intellectual Property:</strong> Respecting the system's design and implementation</li>
+                                    <li><strong>Transparency:</strong> Clearly documenting our evaluation methods and criteria</li>
+                                </ul>
+                            </div>
+                            <div class="note-edit" style="display: none;">
+                                <textarea class="note-textarea" id="decide-ethical-textarea">We considered the following ethical aspects in our evaluation:
+
+• Privacy: Ensuring that any user data encountered during evaluation remains confidential
+• Objectivity: Maintaining impartial assessment regardless of personal preferences
+• Constructive Criticism: Focusing on providing helpful feedback rather than merely criticizing
+• Intellectual Property: Respecting the system's design and implementation
+• Transparency: Clearly documenting our evaluation methods and criteria</textarea>
+                                <div class="editor-help">
+                                    <strong>Formatting tips:</strong> Use the toolbar buttons or type <code>**bold**</code>, <code>_italic_</code>, <code>==highlight==</code>, or start lines with <code>•</code> for bullet points.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Evaluate -->
+                    <div class="step note-card" id="evaluate">
+                        <div class="step-header">
+                            <div class="step-letter">E</div>
+                            <h2>Evaluate, interpret, and present the data</h2>
+                            <div class="note-actions">
+                                <button class="edit-btn" onclick="toggleEditMode('evaluate-content')">Edit</button>
+                                <button class="save-btn" onclick="saveNote('evaluate-content')" style="display: none;">Save</button>
+                            </div>
+                        </div>
+                        <div class="step-content" id="evaluate-content">
+                            <div class="note-view">
+                                <p>Our approach to analyzing and presenting the evaluation results included:</p>
+                                <ul>
+                                    <li><strong>Data Collection:</strong> Systematically recording observations during evaluation sessions</li>
+                                    <li><strong>Issue Categorization:</strong> Grouping findings according to Nielsen's heuristics</li>
+                                    <li><strong>Severity Assessment:</strong> Rating each issue based on its impact on usability</li>
+                                    <li><strong>Pattern Identification:</strong> Recognizing recurring issues across different system components</li>
+                                    <li><strong>Visualization:</strong> Using screenshots and annotations to illustrate problems</li>
+                                    <li><strong>Recommendation Development:</strong> Formulating evidence-based suggestions for improvement</li>
+                                    <li><strong>Report Creation:</strong> Compiling findings into this comprehensive web report</li>
+                                </ul>
+                            </div>
+                            <div class="note-edit" style="display: none;">
+                                <textarea class="note-textarea" id="evaluate-textarea">Our approach to analyzing and presenting the evaluation results included:
+
+• Data Collection: Systematically recording observations during evaluation sessions
+• Issue Categorization: Grouping findings according to Nielsen's heuristics
+• Severity Assessment: Rating each issue based on its impact on usability
+• Pattern Identification: Recognizing recurring issues across different system components
+• Visualization: Using screenshots and annotations to illustrate problems
+• Recommendation Development: Formulating evidence-based suggestions for improvement
+• Report Creation: Compiling findings into this comprehensive web report</textarea>
+                                <div class="editor-help">
+                                    <strong>Formatting tips:</strong> Use the toolbar buttons or type <code>**bold**</code>, <code>_italic_</code>, <code>==highlight==</code>, or start lines with <code>•</code> for bullet points.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Heuristic Evaluation</h3>
+                    <p>HCI2 Final Project</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="decide.html">DECIDE Framework</a></li>
+                        <li><a href="evaluation.html">Evaluation Results</a></li>
+                        <li><a href="improvements.html">Proposed Improvements</a></li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Project Information</h4>
+                    <p>Partido State University</p>
+                    <p>College of Engineering and Computational Sciences</p>
+                    <p>Bachelor of Science in Information Technology</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Heuristic Evaluation Team. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
